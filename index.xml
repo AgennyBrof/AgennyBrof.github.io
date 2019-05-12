@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AgennyBrof&#39;s blog</title>
+    <link>https://blog.agennybrof.ml/</link>
+    <description>Recent content on AgennyBrof&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Aug 2018 18:26:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.agennybrof.ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://blog.agennybrof.ml/helloworld/</link>
+      <pubDate>Thu, 16 Aug 2018 18:26:50 +0800</pubDate>
+      
+      <guid>https://blog.agennybrof.ml/helloworld/</guid>
+      <description>Hello World!I&amp;rsquo;m here!  Should have been posted on 16,August,2018 Actually posted on dd,MM,yyyy
+ 引子 这算是本站的第一篇博文，以经典的HelloWorld来命名真是再合适不过了。 这篇博文算是一篇杂谈，姑且聊聊这个blog的一些琐事。
+与博客前缘再续 第一次写blog大概是5岁的时候，那时blog在国内还是一种新兴事物，新浪博客等平台正火，我的第一个blog也诞生在那里。时光荏苒，新浪博客是早已不用了，本以为写博客已是过眼云烟，没想到机缘巧合，多年过去，我又走上了自建博客的坑。
+建站的那些红红火火恍恍惚惚 懒癌晚期与三分热 那日，和@DD6181S03在Discord闲聊，被他安利了Hugo这个神奇的东西。据说搭静态站方便易用，于是当时XM上脑的我表示一周内把blog推上去，然后由于各种原因一意咕行了x个月。。。直到某天Freenom给我来邮件说我白piao的.ml域名再不用就要收回了，才吓得我赶紧搞了个临时的鸽子页面解析上去（不过这样好像违反了.ml的免费协议(￣▽￣)&amp;ldquo;）。
+选择困难说选择 用生成器搭blog最重要的是什么？当然是选主题啊（难道不是专心写文章吗啊喂）,于是某马把看中的主题挨个clone下来，然后测试，然后删掉，成功咕了俩周。
+多灾多难的博文首秀 下决定建站的第二天，人生第一次接触Mark Down（之前一直懒得学），生怕写错的我从网上找了个在线编辑器，边写边看效果，心中甚是得意。然而乐极生悲，文章告成之际，却手抖摁了f5，由于没有登陆，一切的一切都化坐埃土。由于马上要出去约饭，只好打开notepad++随手记了个大纲，日后慢慢补齐，然而终究是少了第一遍写时的那种感觉。
+何以为记，此为期许 搭博客了，总是要写点什么的，以后大概会以日常的随笔为主，还会有一些分享之类的。如果有什么作品啊成果啊应该也会不要脸地往上扔。至于技术性文章/干货分享这种东西，我也想做，只可惜技艺微浅，无甚文笔，还需时间的沉淀与dalao们的指教。 另外还想写的就是一些个人对时事的看法，谈不上针砭时弊（更不会黑屁），只是抒个人心中之感而已。
+THE END 当你看到这篇文的时候，宝莉的blog应该已经正式开放了。然而鸽子改不了本性，此文必有诸多不妥之处，只得以后再改了。</description>
+    </item>
+    
+    <item>
+      <title>See Also</title>
+      <link>https://blog.agennybrof.ml/friendlinks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.agennybrof.ml/friendlinks/</guid>
+      <description>友链们 . Leo&amp;rsquo;s blog</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://blog.agennybrof.ml/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.agennybrof.ml/about/</guid>
+      <description>这里是关于  本站是AgennyBrof鸽了不知道多久后终于搭出来的个人博客
+ 我是谁 是一只有夜骐基因的小独角兽🦄！芒果、夜刷、血等会导致变身（大雾）
+写些什么 随笔啊，作文啊，技术文章啊等等一切可以发在上面的东西！</description>
+    </item>
+    
+  </channel>
+</rss>
