@@ -5,4 +5,4 @@
 是AgennyBrof的破blog。
 ## 用了啥
 * powered by [goHugo](https://gohugo.io/)
-* themed by [yinyang](https://github.com/joway/hugo-theme-yinyang)
+* themed by [Even](https://themes.gohugo.io/hugo-theme-even)
