@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>站点公告 on AgennyBrof&#39;s blog</title>
+    <link>https://ncca.ac.cn/categories/%E7%AB%99%E7%82%B9%E5%85%AC%E5%91%8A/</link>
+    <description>Recent content in 站点公告 on AgennyBrof&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Jan 2020 19:26:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://ncca.ac.cn/categories/%E7%AB%99%E7%82%B9%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>新年新气象，站点升级</title>
+      <link>https://ncca.ac.cn/post/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1%E7%AB%99%E7%82%B9%E5%8D%87%E7%BA%A7/</link>
+      <pubDate>Fri, 24 Jan 2020 19:26:50 +0800</pubDate>
+      
+      <guid>https://ncca.ac.cn/post/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1%E7%AB%99%E7%82%B9%E5%8D%87%E7%BA%A7/</guid>
+      <description>新年新气象，站点升级 烟花璀璨醉长空，己亥庚子轮替之时，本年更博客进行了一波站点升级 购入回文域名ncca.ac.cn，原blog.agenny</description>
+    </item>
+    
+  </channel>
+</rss>

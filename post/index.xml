@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AgennyBrof&#39;s blog</title>
-    <link>https://ncca.ac.cn/</link>
-    <description>Recent content on AgennyBrof&#39;s blog</description>
+    <title>Posts on AgennyBrof&#39;s blog</title>
+    <link>https://ncca.ac.cn/post/</link>
+    <description>Recent content in Posts on AgennyBrof&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 Jan 2020 19:26:50 +0800</lastBuildDate>
     
-	<atom:link href="https://ncca.ac.cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ncca.ac.cn/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,24 +27,6 @@
       
       <guid>https://ncca.ac.cn/post/helloworld/</guid>
       <description>Hello World!I&amp;rsquo;m here! Should have been posted on 16,August,2018 Actually posted on dd,MM,yyyy 引子 这算是本站的第一篇博文，以经典的HelloWorld来命名真是再合适不过了。 这篇博文算是一篇杂谈，姑且聊聊这个</description>
-    </item>
-    
-    <item>
-      <title>See Also</title>
-      <link>https://ncca.ac.cn/friendlinks/</link>
-      <pubDate>Thu, 16 Aug 2018 18:26:50 +0800</pubDate>
-      
-      <guid>https://ncca.ac.cn/friendlinks/</guid>
-      <description>友链们 . Leo&amp;rsquo;s blog</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>https://ncca.ac.cn/about/</link>
-      <pubDate>Thu, 16 Aug 2018 18:26:50 +0800</pubDate>
-      
-      <guid>https://ncca.ac.cn/about/</guid>
-      <description>这里是关于 这是啥 本站是AgennyBrof鸽了不知道多久后终于搭出来的个人博客，目前部署在GitHub Pages上 我是谁 Ingress蓝军，</description>
     </item>
     
   </channel>

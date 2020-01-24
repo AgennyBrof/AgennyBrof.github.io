@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on AgennyBrof&#39;s blog</title>
+    <link>https://ncca.ac.cn/categories/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on AgennyBrof&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Aug 2018 18:26:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://ncca.ac.cn/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HelloWorld</title>
+      <link>https://ncca.ac.cn/post/helloworld/</link>
+      <pubDate>Thu, 16 Aug 2018 18:26:50 +0800</pubDate>
+      
+      <guid>https://ncca.ac.cn/post/helloworld/</guid>
+      <description>Hello World!I&amp;rsquo;m here! Should have been posted on 16,August,2018 Actually posted on dd,MM,yyyy 引子 这算是本站的第一篇博文，以经典的HelloWorld来命名真是再合适不过了。 这篇博文算是一篇杂谈，姑且聊聊这个</description>
+    </item>
+    
+  </channel>
+</rss>
