@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on AgennyBrof&#39;s blog</title>
+    <link>https://ncca.ac.cn/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on AgennyBrof&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Feb 2020 18:45:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://ncca.ac.cn/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flarum建站纪实</title>
+      <link>https://ncca.ac.cn/post/flarum%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%AE%9E/</link>
+      <pubDate>Tue, 25 Feb 2020 18:45:05 +0800</pubDate>
+      
+      <guid>https://ncca.ac.cn/post/flarum%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%AE%9E/</guid>
+      <description>谈谈OneinStack下Flarum的安装与配置，还有一些相关的hack</description>
+    </item>
+    
+  </channel>
+</rss>

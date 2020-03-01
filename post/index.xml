@@ -6,10 +6,19 @@
     <description>Recent content in Posts on AgennyBrof&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jan 2020 19:26:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 18:45:05 +0800</lastBuildDate>
     
 	<atom:link href="https://ncca.ac.cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flarum建站纪实</title>
+      <link>https://ncca.ac.cn/post/flarum%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%AE%9E/</link>
+      <pubDate>Tue, 25 Feb 2020 18:45:05 +0800</pubDate>
+      
+      <guid>https://ncca.ac.cn/post/flarum%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%AE%9E/</guid>
+      <description>谈谈OneinStack下Flarum的安装与配置，还有一些相关的hack</description>
+    </item>
     
     <item>
       <title>新年新气象，站点升级</title>
@@ -17,7 +26,7 @@
       <pubDate>Fri, 24 Jan 2020 19:26:50 +0800</pubDate>
       
       <guid>https://ncca.ac.cn/post/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1%E7%AB%99%E7%82%B9%E5%8D%87%E7%BA%A7/</guid>
-      <description>新年新气象，站点升级 烟花璀璨醉长空，己亥庚子轮替之时，本年更博客进行了一波站点升级 购入回文域名ncca.ac.cn，原blog.agenny</description>
+      <description>本年更博客升级啦</description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@
       <pubDate>Thu, 16 Aug 2018 18:26:50 +0800</pubDate>
       
       <guid>https://ncca.ac.cn/post/helloworld/</guid>
-      <description>Hello World!I&amp;rsquo;m here! Should have been posted on 16,August,2018 Actually posted on dd,MM,yyyy 引子 这算是本站的第一篇博文，以经典的HelloWorld来命名真是再合适不过了。 这篇博文算是一篇杂谈，姑且聊聊这个</description>
+      <description>AgennyBrof&amp;rsquo;s Blog的第一篇文章，在这里向世界问好：Hello World!I&amp;rsquo;m here!</description>
     </item>
     
   </channel>

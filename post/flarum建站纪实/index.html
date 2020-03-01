@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Flarum建站纪实 - AgennyBrof&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="AgennyBrof" /><meta name="description" content="OneinStack下Flarum的安装与配置" /><meta name="keywords" content="AgennyBrof, blog, personal blog, Chinese" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.57.2 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://ncca.ac.cn/post/flarum%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%AE%9E/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Flarum建站纪实" />
+<meta property="og:description" content="OneinStack下Flarum的安装与配置" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ncca.ac.cn/post/flarum%E5%BB%BA%E7%AB%99%E7%BA%AA%E5%AE%9E/" />
+<meta property="article:published_time" content="2020-02-25T18:45:05+08:00" />
+<meta property="article:modified_time" content="2020-02-25T18:45:05+08:00" />
+<meta itemprop="name" content="Flarum建站纪实">
+<meta itemprop="description" content="OneinStack下Flarum的安装与配置">
+
+
+<meta itemprop="datePublished" content="2020-02-25T18:45:05&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-25T18:45:05&#43;08:00" />
+<meta itemprop="wordCount" content="3017">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Flarum建站纪实"/>
+<meta name="twitter:description" content="OneinStack下Flarum的安装与配置"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">AgennyBrof</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/friendlinks/">
+        <li class="mobile-menu-item">友链</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">AgennyBrof</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/friendlinks/">友链</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Flarum建站纪实</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-25 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#部署环境准备">部署环境准备</a>
+<ul>
+<li><a href="#安装oninstack">安装OninStack</a></li>
+<li><a href="#安装composer">安装Composer</a></li>
+</ul></li>
+<li><a href="#安装flarum">安装Flarum</a></li>
+<li><a href="#配置与运行">配置与运行</a>
+<ul>
+<li><a href="#创建数据库">创建数据库</a></li>
+<li><a href="#nginx配置">Nginx配置</a></li>
+<li><a href="#引导初始化">引导初始化</a></li>
+<li><a href="#中文搜索">中文搜索</a></li>
+<li><a href="#添加插件">添加插件</a>
+<ul>
+<li><a href="#sitemap配置">Sitemap配置</a></li>
+</ul></li>
+<li><a href="#其他优化">其他优化</a></li>
+</ul></li>
+<li><a href="#尾声">尾声</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<p>最近打算搭个论坛，看了一圈最后决定用好看开源又轻量，且社区比较活跃的<a href="https://flarum.org">Flarum</a>。因为我的机子是跟朋友合租的，也为了图方便，所以需要安到<a href="https://oneinstack.com">OneinStack</a>开的虚拟机里。不过Flarum的官方文档并没有给出相关的说明，网上有针对性的教程也不太好找，而我在安装过程中也确实遇到了部分问题，所以写了这篇文章记录一下安装和配置的过程，并附上自己觉得比较好用的插件，一来给以后的自己提供参考，二来也希望能给遇到同样问题的人以帮助。</p>
+
+<h2 id="部署环境准备">部署环境准备</h2>
+
+<h3 id="安装oninstack">安装OninStack</h3>
+
+<p>因为朋友之前已经装过了，所以我没有经历过这一步。OneinStack可以选择用<code>apt</code>或者<code>yum</code>直接安或者通过<code>wget</code>和<code>tar</code>下载并解压后用<code>./install.sh</code>进行交互安装，第二种方式可以在官网上<a href="https://oneinstack.com/auto/">按需生成命令</a>，复制粘贴就好了。按照<a href="https://flarum.org/docs/install.html#server-requirements">官方文档</a>你需要Nginx、7.1以上的PHP（包含<code>curl</code>,<code>dom</code>,<code>gd</code>,<code>json</code>,<code>mbstring</code>,<code>openssl</code>,<code>pdo_mysql</code>,<code>tokenizer</code>,<code>zip</code>扩展）和5.6以上的MySQL。此外，尽管官网没说，但你大概率还需要一个叫做<code>fileinfo</code>的PHP扩展。</p>
+
+<h3 id="安装composer">安装Composer</h3>
+
+<p>Flarum使用<a href="https://getcomposer.org/">Composer</a>进行包管理，所以需要提前准备好。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">php -r <span class="s2">&#34;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&#34;</span>
+php -r <span class="s2">&#34;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;哈希值&#39;) { echo &#39;verified&#39;; } else { echo &#39;corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&#34;</span> <span class="c1">#这个地方建议加一步哈希值校验，哈希值请查阅composer.github.io/pubkeys.html</span>
+php composer-setup.php --install-dir<span class="o">=</span>bin --filename<span class="o">=</span>composer	<span class="c1">#后面的两个两个参数都是可选项，用来指定安装目录</span>
+php -r <span class="s2">&#34;unlink(&#39;composer-setup.php&#39;);&#34;</span>
+mv composer.phar /usr/local/bin/composer	<span class="c1">#可选步骤，移动composer.phar实现全局安装</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Composer的服务器在国外，可以考虑换个镜像来提速。我个人比较推荐<a href="https://phpcomposer.com">这个</a>。
+官方推荐直接改全局配置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">composer config -g repo.packagist composer https://packagist.phpcomposer.com</code></pre></td></tr></table>
+</div>
+</div>
+<p>不过我只改了当前项目的，进入项目根目录然后：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">composer config repo.packagist composer https://packagist.phpcomposer.com</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="安装flarum">安装Flarum</h2>
+
+<p>OneinStack默认应该装在<code>root</code>目录，运行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">~/oneinstack/vhost.sh</code></pre></td></tr></table>
+</div>
+</div>
+<p>按照自己的需求添加一个虚拟主机。域名要记得提前解析不然SSL证书签发会出错。至于伪静态选不选无所谓，因为之后给Flarum配伪静态的时候根本用不到它生成的那个文件。
+Beta期间Flarum只能创建完成后进入网站目录，执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">composer create-project flarum/flarum . --stability<span class="o">=</span>beta</code></pre></td></tr></table>
+</div>
+</div>
+<p>如果在更新依赖时进程被杀（killed），可能是因为内存不足，最省事的解决方案时重启主机✓。</p>
+
+<h2 id="配置与运行">配置与运行</h2>
+
+<p>Flarum核心的本体已经安完了，不过想要建站还得再配置一下。</p>
+
+<h3 id="创建数据库">创建数据库</h3>
+
+<p>没什么特别的，注意一下字符集选<code>utf8mb4</code>来保证中文的显示就行了。登录MySQL执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">create database 数据库名 character <span class="nb">set</span> utf8mb4 collate utf8mb4_bin<span class="p">;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="nginx配置">Nginx配置</h3>
+
+<p>由于是OneinStack开出来的主机，对应的Nginx配置文件应该会在<code>/usr/local/nginx/conf/vhost</code>目录下，文件名默认是<code>网站域名.conf</code>。用你喜欢的文本编辑器打开它，做两处修改：</p>
+
+<ol>
+<li>root：需要在原有路径后面加上<code>/public</code>，这是因为Flarum的页面全都位于这个文件夹下。</li>
+<li>伪静态（rewrite）：从不知道哪个版本开始，Flarum预置了包含伪静态规则的<code>.nginx.conf</code>文件，只需要在Nginx配置文件的<code>server</code>块中的任意位置把它<code>include</code>进去就行，比之前人工手写方便到不知哪里去了。</li>
+</ol>
+
+<p>配置完成的文件大概长这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">#以我的配置文件为例</span>
+
+<span class="err">server</span><span class="p">{</span>
+	<span class="err">listen</span> <span class="err">80;</span>
+	<span class="err">listen</span> <span class="err">443</span> <span class="err">ssl</span> <span class="err">http2;</span>
+	<span class="err">#……省略n行</span>
+	<span class="err">root</span> <span class="err">/data/wwwroot/forum.pony4us.com/public;</span>    <span class="err">#这是第一处改动</span>
+	<span class="err">if</span> <span class="err">($ssl_protocol</span> <span class="err">=</span> <span class="nt">&#34;&#34;</span><span class="err">)</span> <span class="p">{</span> <span class="err">return</span> <span class="err">301</span> <span class="err">https://$host$request_uri;</span> <span class="p">}</span>
+	<span class="err">if</span> <span class="err">($host</span> <span class="err">!=</span> <span class="err">forum.pony</span><span class="mi">4</span><span class="err">us.com)</span> <span class="p">{</span>  <span class="err">return</span> <span class="err">301</span> <span class="err">$scheme://forum.pony4us.com$request_uri;</span> <span class="p">}</span>
+	<span class="err">include</span> <span class="err">/usr/local/nginx/conf/rewrite/flarum.conf;</span>  <span class="err">#这是OneinStac自动生成的伪静态规则不用管（开虚拟机的时候如果选了伪静态就会有，删了也行</span>
+	
+	<span class="err">#……省略n行</span>
+	
+	<span class="err">include</span> <span class="err">/data/wwwroot/forum.pony</span><span class="mi">4</span><span class="err">us.com/.nginx.conf;</span>    <span class="err">#这是第二处改动</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>修改完毕后检查配置是否有误并重载：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">nginx -t
+#确认无误后执行
+nginx -s reload</pre></td></tr></table>
+</div>
+</div>
+<h3 id="引导初始化">引导初始化</h3>
+
+<p>在浏览器里访问你的网站地址，并根据引导初始化你的论坛。建议给填一个表前缀方便日后管理。
+第一次访问大概率会因为权限不足而遇到错误提示你文件夹写入权限不足，只需要加权即可：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">chmod -R /data/wwwroot/目录/public/assets /data/wwwroot/目录/storage
+<span class="c1">#可能还需要更改用户</span>
+chown -R www:www /data/wwwroot/目录/public/assets /data/wwwroot/目录/storage</code></pre></td></tr></table>
+</div>
+</div>
+<p>注意因为是OneinStack开的虚拟机，改用户的话一定要改<code>www:www</code>，官方文档的<code>www-data:www-data</code>不适用（我主要就是在这里被坑了</p>
+
+<p>##论坛优化</p>
+
+<p>论坛搭建已经结束了，不过还可以做几处改动来优化体验。</p>
+
+<h3 id="中文搜索">中文搜索</h3>
+
+<p>Flarum本身没有对中文搜索做优化也不支持标题搜索，之前国人开的中文版或者中文搜索插件也都已经弃坑，不过还好MySQL从5.7开始支持中文全文索引（FULLTEXT），只需要重建索引即可。
+首先修改<code>my.cnf</code>（有的是<code>mysql.cnf</code>），加入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">mysqld</span><span class="p">]</span>
+<span class="nx">ngram_token_size</span><span class="p">=</span><span class="mi">2</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>之后重建全文索引：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="c1">--forum_是我的表前缀
+</span><span class="c1"></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">flarum_posts</span> <span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">content</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="n">FULLTEXT</span> <span class="k">INDEX</span> <span class="n">content</span> <span class="k">ON</span> <span class="o">`</span><span class="n">forum_posts</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">content</span><span class="o">`</span><span class="p">)</span> <span class="k">WITH</span> <span class="n">PARSER</span> <span class="n">ngram</span><span class="p">;</span>
+
+<span class="c1">--下面这两行新增了对标题的搜索
+</span><span class="c1"></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">flarum_discussions</span> <span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">title</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="n">FULLTEXT</span> <span class="k">INDEX</span> <span class="n">title</span> <span class="k">ON</span> <span class="o">`</span><span class="n">forum_discussions</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">title</span><span class="o">`</span><span class="p">)</span> <span class="k">WITH</span> <span class="n">PARSER</span> <span class="n">ngram</span><span class="p">;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Done!</p>
+
+<h3 id="添加插件">添加插件</h3>
+
+<p>Flarum仅仅只提供了一个基本的“脚手架”，很多功能都需要社区插件的支持，你可以到<a href="https://discuss.flarum.org/">官方论坛</a>和<a href="https://flagrow.io/">Flagrow</a>寻找你需要的插件。我目前正在使用的有三十个左右，此外还有许多正在测试以观察它在我的论坛内的运作效果，我计划把我的composer配置以及针对Flarum的各种<code>hack</code>扔到GitHub上。
+这里姑且贴出几个（我觉得）比较基础，一定要上的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">csineneo/lang-simplified-chinese	#台湾老哥的简中语言包（有很多台湾习惯用法	计划高考后重新翻译提pull request
+csineneo/lang-traditional-chinese	#台湾老哥的繁中语言包（台湾正体）
+flagrow/sitemap	#sitemap生成器，需要改nginx配置，稍后会讲
+squeevee/flarum-ext-fancybox	#fancybox插件
+clarkwinkelmann/flarum-ext-emojionearea	#Emoji选择器
+fof/links	#用于在导航栏添加链接</pre></td></tr></table>
+</div>
+</div>
+<p>Flarum插件也同样使用Composer进行包管理，你可以通过<code>composer require 插件包</code>来安装插件，通过<code>composer remove 插件包</code>来卸载插件。卸载插件前记得先在后台关闭插件并单击卸载来清楚插件在数据库和本地的数据与缓存。
+与此同时，Flarum正在测试一个叫做<a href="https://discuss.flarum.org/d/5151-bazaar-the-extension-marketplace">Bazaar</a>的市场插件，期望未来通过插件市场进行插件的安装与卸载。这个插件现在已经可以试用了，不过我总感觉它不靠谱，所以一直在用Composer，如果你胆子比较大可以尝试一下。</p>
+
+<h4 id="sitemap配置">Sitemap配置</h4>
+
+<p>把比较特殊的Sitemap插件单独提出来写一下。在使用Nginx作为网页服务器时，访问<code>/sitemap.xml</code>可能会收到来自Nginx的404报错，这一般是托管规则配置有误导致的。可以尝试在<code>.nginx.conf</code>的<code>location / {}</code>块下加上一行<code>location = /sitemap.xml { try_files $uri $uri/ /index.php?$query_string; }</code>来解决这个问题。
+更改后的文件大概长这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">location</span> <span class="err">/</span> <span class="p">{</span>
+	<span class="err">try_files</span> <span class="err">$uri</span> <span class="err">$uri/</span> <span class="err">/index.php?$query_string;</span>
+<span class="p">}</span>
+<span class="err">location</span> <span class="err">=</span> <span class="err">/sitemap.xml</span> <span class="p">{</span> <span class="err">try_files</span> <span class="err">$uri</span> <span class="err">$uri/</span> <span class="err">/index.php?$query_string;</span> <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>修改后检查配置无误并重载使配置生效即可。</p>
+
+<h3 id="其他优化">其他优化</h3>
+
+<p>还有一些不是必须但也很有用的优化方法，大部分都需要更改Flarum的核心文件，如果有时间（高考完以后吧）我会整理一下扔到GitHub上。
+希望我不会咕~</p>
+
+<h2 id="尾声">尾声</h2>
+
+<p>我的第一篇迫真技术博文到这也就结束了，实在惭愧，实力所限并没有写多么深入的东西，不过真正独立完成一篇技术文的我还是挺自豪的。如果上面的某几行文字给你带来了帮助，那这篇文章的价值也便经由你我而被具现了，我想这大概就是技术类文章的意义之一吧。最后臭不要脸地推介一下我的<a href="https://forum.pony4us.com">Pony4us Forum</a>，一个为马迷而生的MLP同人论坛。有谁会不喜欢小马呢！</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">AgennyBrof</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-25
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E6%96%B0%E5%B9%B4%E6%96%B0%E6%B0%94%E8%B1%A1%E7%AB%99%E7%82%B9%E5%8D%87%E7%BA%A7/">
+            <span class="next-text nav-default">新年新气象，站点升级</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:agentzjx.nz@jn84.net" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/AgennyBrof" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://github.com/AgennyBrof" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/21249782" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://ncca.ac.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">AgennyBrof</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

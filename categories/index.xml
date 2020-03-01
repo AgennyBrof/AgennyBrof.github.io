@@ -6,17 +6,26 @@
     <description>Recent content in Categories on AgennyBrof&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jan 2020 19:26:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 18:45:05 +0800</lastBuildDate>
     
 	<atom:link href="https://ncca.ac.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>站点公告</title>
-      <link>https://ncca.ac.cn/categories/%E7%AB%99%E7%82%B9%E5%85%AC%E5%91%8A/</link>
+      <title>技术</title>
+      <link>https://ncca.ac.cn/categories/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Tue, 25 Feb 2020 18:45:05 +0800</pubDate>
+      
+      <guid>https://ncca.ac.cn/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>公告</title>
+      <link>https://ncca.ac.cn/categories/%E5%85%AC%E5%91%8A/</link>
       <pubDate>Fri, 24 Jan 2020 19:26:50 +0800</pubDate>
       
-      <guid>https://ncca.ac.cn/categories/%E7%AB%99%E7%82%B9%E5%85%AC%E5%91%8A/</guid>
+      <guid>https://ncca.ac.cn/categories/%E5%85%AC%E5%91%8A/</guid>
       <description></description>
     </item>
     
