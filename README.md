@@ -1,8 +1,10 @@
 # AgennyBrof.github.io
->My personal blog which powered by hugo.<br>
->[blog.agennybrof.ml](https://blog.agennybrof.ml)
+My personal blog which powered by hugo.
+>Primary address [ncca.ac.cn](https://ncca.ac.cn)<br />
+>Permanent address: agennybrof.ml and its subdomains.
 
 是AgennyBrof的破blog。
+
 ## 用了啥
-* powered by [goHugo](https://gohugo.io/)
-* themed by [Even](https://themes.gohugo.io/hugo-theme-even)
+- powered by [goHugo](https://gohugo.io/)
+- themed by [Even](https://themes.gohugo.io/hugo-theme-even)
