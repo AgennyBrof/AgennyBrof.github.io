@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2020-02-25T18:45:05&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-25T18:45:05&#43;08:00" />
-<meta itemprop="wordCount" content="3017">
+<meta itemprop="wordCount" content="3046">
 
 
 
@@ -149,6 +149,9 @@
 <li><a href="#创建数据库">创建数据库</a></li>
 <li><a href="#nginx配置">Nginx配置</a></li>
 <li><a href="#引导初始化">引导初始化</a></li>
+</ul></li>
+<li><a href="#论坛优化">论坛优化</a>
+<ul>
 <li><a href="#中文搜索">中文搜索</a></li>
 <li><a href="#添加插件">添加插件</a>
 <ul>
@@ -276,36 +279,38 @@ Beta期间Flarum只能创建完成后进入网站目录，执行：</p>
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">#以我的配置文件为例</span>
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">//以我的配置文件为例</span>
+<span class="err">//原生json并不支持包含注释，此处双斜线加注仅为方便介绍而用</span>
 
 <span class="err">server</span><span class="p">{</span>
 	<span class="err">listen</span> <span class="err">80;</span>
 	<span class="err">listen</span> <span class="err">443</span> <span class="err">ssl</span> <span class="err">http2;</span>
-	<span class="err">#……省略n行</span>
-	<span class="err">root</span> <span class="err">/data/wwwroot/forum.pony4us.com/public;</span>    <span class="err">#这是第一处改动</span>
+	<span class="err">//……省略n行</span>
+	<span class="err">root</span> <span class="err">/data/wwwroot/forum.pony4us.com/public;</span>	<span class="err">//这是第一处改动</span>
 	<span class="err">if</span> <span class="err">($ssl_protocol</span> <span class="err">=</span> <span class="nt">&#34;&#34;</span><span class="err">)</span> <span class="p">{</span> <span class="err">return</span> <span class="err">301</span> <span class="err">https://$host$request_uri;</span> <span class="p">}</span>
 	<span class="err">if</span> <span class="err">($host</span> <span class="err">!=</span> <span class="err">forum.pony</span><span class="mi">4</span><span class="err">us.com)</span> <span class="p">{</span>  <span class="err">return</span> <span class="err">301</span> <span class="err">$scheme://forum.pony4us.com$request_uri;</span> <span class="p">}</span>
-	<span class="err">include</span> <span class="err">/usr/local/nginx/conf/rewrite/flarum.conf;</span>  <span class="err">#这是OneinStac自动生成的伪静态规则不用管（开虚拟机的时候如果选了伪静态就会有，删了也行</span>
+	<span class="err">include</span> <span class="err">/usr/local/nginx/conf/rewrite/flarum.conf;</span>	<span class="err">//这是OneinStac自动生成的伪静态规则不用管（开虚拟机的时候如果选了伪静态就会有，删了也行</span>
 	
-	<span class="err">#……省略n行</span>
+	<span class="err">//……省略n行</span>
 	
-	<span class="err">include</span> <span class="err">/data/wwwroot/forum.pony</span><span class="mi">4</span><span class="err">us.com/.nginx.conf;</span>    <span class="err">#这是第二处改动</span>
+	<span class="err">include</span> <span class="err">/data/wwwroot/forum.pony</span><span class="mi">4</span><span class="err">us.com/.nginx.conf;</span>    <span class="err">//这是第二处改动</span>
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
 </div>
 <p>修改完毕后检查配置是否有误并重载：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">nginx -t
-#确认无误后执行
-nginx -s reload</pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">nginx -t
+<span class="c1">#确认无误后执行</span>
+nginx -s reload</code></pre></td></tr></table>
 </div>
 </div>
 <h3 id="引导初始化">引导初始化</h3>
@@ -326,7 +331,7 @@ chown -R www:www /data/wwwroot/目录/public/assets /data/wwwroot/目录/storage
 </div>
 <p>注意因为是OneinStack开的虚拟机，改用户的话一定要改<code>www:www</code>，官方文档的<code>www-data:www-data</code>不适用（我主要就是在这里被坑了</p>
 
-<p>##论坛优化</p>
+<h2 id="论坛优化">论坛优化</h2>
 
 <p>论坛搭建已经结束了，不过还可以做几处改动来优化体验。</p>
 
@@ -381,12 +386,12 @@ chown -R www:www /data/wwwroot/目录/public/assets /data/wwwroot/目录/storage
 </span><span class="lnt">6
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">csineneo/lang-simplified-chinese	#台湾老哥的简中语言包（有很多台湾习惯用法	计划高考后重新翻译提pull request
-csineneo/lang-traditional-chinese	#台湾老哥的繁中语言包（台湾正体）
-flagrow/sitemap	#sitemap生成器，需要改nginx配置，稍后会讲
-squeevee/flarum-ext-fancybox	#fancybox插件
-clarkwinkelmann/flarum-ext-emojionearea	#Emoji选择器
-fof/links	#用于在导航栏添加链接</pre></td></tr></table>
+<pre class="chroma">csineneo/lang-simplified-chinese	//台湾老哥的简中语言包（有很多台湾习惯用法）
+csineneo/lang-traditional-chinese	//台湾老哥的繁中语言包（台湾正体）
+flagrow/sitemap	//sitemap生成器，需要改nginx配置，稍后会讲
+squeevee/flarum-ext-fancybox	//fancybox插件
+clarkwinkelmann/flarum-ext-emojionearea	//Emoji选择器
+fof/links	//用于在导航栏添加链接</pre></td></tr></table>
 </div>
 </div>
 <p>Flarum插件也同样使用Composer进行包管理，你可以通过<code>composer require 插件包</code>来安装插件，通过<code>composer remove 插件包</code>来卸载插件。卸载插件前记得先在后台关闭插件并单击卸载来清楚插件在数据库和本地的数据与缓存。
