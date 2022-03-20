@@ -1,7 +1,7 @@
 # AgennyBrof.github.io
 My personal blog which powered by hugo.
 >Primary address [ncca.ac.cn](https://ncca.ac.cn)<br />
->Permanent address: agennybrof.ml and its subdomains.
+>Permanent address: ~agennybrof.ml and its subdomains.~ NULL
 
 是AgennyBrof的破blog。
 
